@@ -1,6 +1,6 @@
 # Guitar Center Products
 By Julian Hasse 
-(based on Deborah Kurata's tutorial)
+(based on several Angular tutorials)
 
 ## Install
 ```terminal
@@ -11,7 +11,8 @@ ng serve -o
 ## Login
 You can use any name and password. This release won't check credentials but your name will appear in the user section.
 
-## Angular core competencies, patterns, and best practices applied in this demo
+## Description for Brandon Taylor
+## Angular core competencies, patterns, and best practices applied on this demo
 
 ### 1 Inter-component communication:
 Components created: 
