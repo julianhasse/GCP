@@ -3,8 +3,10 @@ By Julian Hasse
 (based on Deborah Kurata's tutorial)
 
 ## Install
->npm install
->ng serve -o
+```terminal
+npm install
+ng serve -o
+```
 
 ## Login
 You can use any name and password. This release won't check credentials but your name will appear in the user section.
@@ -38,5 +40,7 @@ Components created:
 
 ### 6 Observables and Subscriptions
 In order to manage asynchronous data we used Observables ("pipeable operators") and Reactive Extensions (RxJS) for the Product service:
-```getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.productsUrl)```
+```javascript
+getProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.productsUrl)
+    ```
