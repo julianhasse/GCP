@@ -21,7 +21,10 @@ Components created:
 * MessageComponent (logs and displays user's activity. PopUp component in a "forChild outlet")
 * ProductList (parent product component), ProductDetail, ProductEdit, ProductEditTags to manage the product list views. 
 * StarComponent (this component utilizes an @Input() decorator to receive data from the parent component via property binding 
-<pm-star [rating]="product.starRating">, and features an @Output() decorator to emit an event when clicked. (It will log out "clicked" in the console)
+```javascript
+<pm-star [rating]="product.starRating">
+```
+, and features an @Output() decorator to emit an event when clicked. (It will log out "clicked" in the console)
 
 ### 2 Sharing content across components
 * Actual products are shared through a "in-memory web api" service (product.service.ts), (product.ts) is the interface that defines the entity, (product.data.ts) has the hard coded object with product details. This service is provided via @Injectable for the whole app (root).
@@ -37,7 +40,11 @@ Components created:
 * In order to speed up the app's startup time we use Lazy Loading (via "loadChildren()") for the ProductModule (that's why we used 2 "feature modules", Routes were grouped under a single parent, and ProductModule is NOT added to the list of the app.module's imports). You can check Lazy Loading is working via the NETWORKS tab in he Chrome Developer's Tab (load the app, login and then refresh the browser and you'll see the new js bundle loading!)
 
 ### 5 Manipulation of data via pipes
-* In "product-list.component.html" we use ->  <td>{{ product.price | currency:"USD":"symbol":"1.2-2" }}</td> in order to transform bound properties before they are displayed (currency field).
+* In "product-list.component.html" we use ->  
+```javascript
+<td>{{ product.price | currency:"USD":"symbol":"1.2-2" }}</td> 
+```
+in order to transform bound properties before they are displayed (currency field).
 
 ### 6 Observables and Subscriptions
 In order to manage asynchronous data we used Observables ("pipeable operators") and Reactive Extensions (RxJS) for the Product service:
