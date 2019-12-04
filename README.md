@@ -2,10 +2,10 @@
 By Julian Hasse 
 (based on several Angular tutorials)
 
-## Install
-```terminal
-npm install
-ng serve -o
+## Quick Start
+```bash
+# npm install
+# ng serve -o
 ```
 
 ## Login
